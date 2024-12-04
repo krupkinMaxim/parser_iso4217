@@ -1,8 +1,8 @@
 # main стартовый модуль проекта
 
 
-
-# TODO import "зависимость " из задания 
+#TODO переименовать функции 
+from Functions import func1, func2
 
 
 def main():
