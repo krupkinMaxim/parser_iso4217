@@ -24,3 +24,13 @@ def get_currency_data(url):
     for row in table.find_all('tr')[1:]:
         columns = row.find_all('td')
         
+        if len(columns) >= 4:  # Проверяем, что строка содержит достаточное количество данных
+            country = columns[0].get_text(strip=True)
+            code = columns[1].get_text(strip=True)
+            symbol = columns[2].get_text(strip=True)
+            currency = columns[3].get_text(strip=True)
+
+            countries.append(country)
+            codes.append(code)
+            symbols.append(symbol)
+            currencies.append(currency)
