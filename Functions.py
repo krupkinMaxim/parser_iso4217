@@ -34,3 +34,12 @@ def get_currency_data(url):
             codes.append(code)
             symbols.append(symbol)
             currencies.append(currency)
+              # Создаем DataFrame
+    data = {
+        'Country': countries,
+        'Currency': currencies,
+        'Currency Code': codes,
+        'Symbol': symbols
+    }
+
+    return pd.DataFrame(data)
