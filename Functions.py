@@ -13,3 +13,9 @@ def get_currency_data(url):
 
     # Находим таблицу с кодами валют
     table = soup.find('table', {'class': 'wikitable'})
+    
+    # Списки для хранения данных
+    currencies = []
+    countries = []
+    codes = []
+    symbols = []
