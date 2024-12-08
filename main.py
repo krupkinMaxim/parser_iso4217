@@ -1,15 +1,7 @@
-# main стартовый модуль проекта
+from Functions import get_currency_data
 
-
-#TODO переименовать функции 
-from Functions import func1, func2
-
-
-def main():
-    #TODO сделай вызов функции из functions
-    pass
-
-
-# инициал. скрипт 
+# Основной код
 if __name__ == "__main__":
     main()
+    
+ 

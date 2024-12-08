@@ -1,13 +1,10 @@
-# Модуль для импорта функций для работы 
+import requests 
+from bs4 import BeautifulSoup 
+import pandas as pd 
 
-#TODO - import "Зависимость из задания"
-
-def func1():
-    pass
-# TODO изменить имя и вставить функцию
-
-
-def func2():
-    pass
-# TODO изменить имя и вставить функцию
+def get_currency_data(url):
+    """Функция для получения данных о валютах с веб-страницы."""
+    # Запрос к странице
+    response = requests.get(url)
+    response.raise_for_status()  # Проверка на успешный запрос
 
