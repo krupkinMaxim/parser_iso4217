@@ -19,3 +19,8 @@ def get_currency_data(url):
     countries = []
     codes = []
     symbols = []
+    
+    # Проходим по строкам таблицы (пропускаем первую строку с заголовками)
+    for row in table.find_all('tr')[1:]:
+        columns = row.find_all('td')
+        
