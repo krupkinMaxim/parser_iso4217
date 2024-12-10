@@ -1,5 +1,4 @@
-from Functions import get_currency_data 
-from functions import save_to_excel
+from Functions import get_currency_data, save_to_excel
 
 # Основной код 
 if __name__ == "__main__": 
