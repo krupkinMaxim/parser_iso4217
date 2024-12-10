@@ -43,3 +43,9 @@ def get_currency_data(url):
     }
 
     return pd.DataFrame(data)
+
+
+def save_to_excel(df, file_name): 
+    """Функция для сохранения DataFrame в Excel файл.""" 
+    df.to_excel(file_name, index=False, engine='openpyxl') 
+    print(f"Таблица успешно сохранена в файл: {file_name}")
